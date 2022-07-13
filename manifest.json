@@ -1,0 +1,53 @@
+{
+   "background": {
+      "scripts": [ "worker.js", "context.js", "v2.js" ]
+   },
+   "browser_action": {
+
+   },
+   "declarative_net_request": {
+      "rule_resources": [ {
+         "enabled": false,
+         "id": "x-frame",
+         "path": "rulesets/x-frame.json"
+      }, {
+         "enabled": false,
+         "id": "overwrite-origin",
+         "path": "rulesets/overwrite-origin.json"
+      }, {
+         "enabled": false,
+         "id": "allow-credentials",
+         "path": "rulesets/allow-credentials.json"
+      }, {
+         "enabled": false,
+         "id": "allow-headers",
+         "path": "rulesets/allow-headers.json"
+      }, {
+         "enabled": false,
+         "id": "referer",
+         "path": "rulesets/referer.json"
+      }, {
+         "enabled": false,
+         "id": "csp",
+         "path": "rulesets/csp.json"
+      } ]
+   },
+   "default_locale": "en",
+   "description": "__MSG_description__",
+   "homepage_url": "https://add0n.com/access-control.html",
+   "icons": {
+      "128": "data/icons/128.png",
+      "16": "data/icons/16.png",
+      "256": "data/icons/256.png",
+      "32": "data/icons/32.png",
+      "48": "data/icons/48.png",
+      "512": "data/icons/512.png",
+      "64": "data/icons/64.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmJiJhCd9cechiUi9ollfE+v9ZYK37526nAt62v4s3HowQrMNPQ9PWdcnqxssC6VLpZqxyBLWvtAwkC9q4XnGPZ6iNjuxV/Lzi/a0ywHoATXnLVq0JIOWwZ+RFpkvUIK83uqnQL347Hjs1y18ZBg6qKzV+/gKiYLJd3aHA+p+Hm7Bj9GwN82zUrPPpyyfx47jss6z777EykPmZZKnQJtBAjpjCrUT6b3IIhC7Eh+XLJEBhT4xTySg4NvNWE/ILLjn7almlQIMcJ+AUdYrTneEfBTWJjCP0glM6gg4chmRVYz1HDCYSW34AOOasZVEUJegYEvEmuxk2OVSWFxweYwKGwIDAQAB",
+   "manifest_version": 2,
+   "name": "CORS Unblock",
+   "permissions": [ "storage", "\u003Call_urls>", "webRequest", "webRequestBlocking", "declarativeNetRequest", "contextMenus" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.3.4"
+}
